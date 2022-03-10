@@ -4,14 +4,18 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    jest: true,
+    jest: true
   },
-  extends: "eslint:recommended",
+  extends: [
+    'eslint:recommended', // eslint
+    'plugin:prettier/recommended' // plugin-prettier
+  ],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    parser: '@babel/eslint-parser', // 解析器
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
   rules: {
-    "space-before-function-paren": ["error", "never"],
-  },
-};
+    'space-before-function-paren': ['error', 'never']
+  }
+}

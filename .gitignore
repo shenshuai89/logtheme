@@ -4,3 +4,4 @@ coverage
 .vscode
 *.lock
 package-lock.json
+.eslintcache
