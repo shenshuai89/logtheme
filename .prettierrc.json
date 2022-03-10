@@ -4,6 +4,6 @@
   "bracketSpacing": true, 
   "htmlWhitespaceSensitivity": "ignore",  
   "endOfLine": "auto",  
-  "trailingComma": "none", 
+  "trailingComma": "all", 
   "tabWidth": 2 
 }

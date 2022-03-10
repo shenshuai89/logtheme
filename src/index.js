@@ -1,6 +1,6 @@
 const themes = ['danger', 'primary', 'success', 'warning', 'info']
 const style =
-  'font-size:12px;background:#F5F7FA;padding-right:8px;padding-top:3px;padding-bottom:3px;';
+  'font-size:12px;background:#F5F7FA;padding-right:8px;padding-top:3px;padding-bottom:3px;'
 export function logtheme(theme = '', ...rest) {
   theme = theme.toString()
   if (!themes.includes(theme)) {
