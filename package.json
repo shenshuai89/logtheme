@@ -22,11 +22,16 @@
     "commit": "git-cz",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "lint-staged": "lint-staged",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
     "prepare": "husky install"
   },
   "jest": {
     "preset": "rollup-jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "lint-staged": {
     "*.{js,ts}": [
