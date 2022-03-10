@@ -27,12 +27,6 @@
   "jest": {
     "preset": "rollup-jest"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
     "*.{js,ts}": [
       "prettier --write",
