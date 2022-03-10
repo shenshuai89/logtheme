@@ -1,5 +1,5 @@
-const {log} = require('../src/index');
+const {logtheme} = require('../src/index');
 
 test('log success', () => {
-  expect(log('success', 'a', 'b', 'c')).toBe(undefined);
+  expect(logtheme('success', 'a', 'b', 'c')).toBe(undefined);
 });
