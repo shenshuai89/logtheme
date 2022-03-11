@@ -19,6 +19,8 @@
     "build": "rollup --environment NODE_ENV:development -c scripts/rollup.config.prod.js",
     "test": "jest",
     "test:c": "jest --coverage",
+    "lint": "eslint src",
+    "fix": "eslint src --fix",
     "commit": "git-cz",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "lint-staged": "lint-staged",
