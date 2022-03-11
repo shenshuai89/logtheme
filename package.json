@@ -22,7 +22,10 @@
     "commit": "git-cz",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "major": "npm version major -m 'update: version major'",
+    "minor": "npm version minor -m 'update: version minor'",
+    "patch": "npm version patch -m 'update: version patch'"
   },
   "jest": {
     "preset": "rollup-jest"
