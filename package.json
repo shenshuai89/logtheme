@@ -23,9 +23,9 @@
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
-    "major": "npm version major -m 'update: version major'",
-    "minor": "npm version minor -m 'update: version minor'",
-    "patch": "npm version patch -m 'update: version patch'"
+    "major": "npm version major -m 'build: update major'",
+    "minor": "npm version minor -m 'build: update minor'",
+    "patch": "npm version patch -m 'build: update patch'"
   },
   "jest": {
     "preset": "rollup-jest"
