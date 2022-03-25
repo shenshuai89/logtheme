@@ -29,4 +29,3 @@ jobs:
         run: npm install
       - name: run fix
         run: npm run fix
-          echo test
