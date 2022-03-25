@@ -1,5 +1,5 @@
 {
-  "name": "@shenshuai89/logtheme",
+  "name": "logtheme",
   "version": "1.0.1",
   "description": "",
   "main": "dist/logtheme.umd.js",
