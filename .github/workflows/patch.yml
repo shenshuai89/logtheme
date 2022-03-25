@@ -24,6 +24,13 @@ jobs:
           node-version: "14.x"
       - name: install deps
         run: npm install
+      - name:  'Login github'
+        uses:  'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.LOGTHEME_TOKEN }}
+        with:
+          default: prerelease
+          rc-wording:     'RELEASE,alpha,PicX'
       - name: publish patch
         run: npm run pub:patch
         env:
