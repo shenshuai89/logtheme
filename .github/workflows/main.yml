@@ -20,6 +20,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
       # Runs a set of commands using the runners shell
       - name: install node
         uses: actions/setup-node@v3.0.0
