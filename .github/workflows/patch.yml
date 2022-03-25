@@ -26,3 +26,5 @@ jobs:
         run: npm install
       - name: publish patch
         run: npm run pub:patch
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
