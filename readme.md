@@ -12,4 +12,7 @@
 ## 重新设置package name
 由于logtheme设置了双因素认证，重新设置packageName位logthemetwo
 
-![starts](https://img.shields.io/github/stars/shenshuai89/logthemetwo.svg)
+### 每次执行过版本更新后，需要把version修改
+
+
+![starts](https://img.shields.io/github/stars/shenshuai89/logtheme.svg)
