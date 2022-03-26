@@ -23,8 +23,11 @@ jobs:
         with:
           user_name: shenshuai89
           user_email: shenshuai89@qq.com
-      - name: publish patch
+      - name: prepublish
         run: npm run prepublish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: publish patch
         run: npm run pub:patch
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
