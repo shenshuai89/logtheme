@@ -23,7 +23,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: publish patch
-        run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-        run: npm run pub:patch
+        run: 
+          npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          npm run pub:patch
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
