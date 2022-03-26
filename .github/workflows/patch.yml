@@ -10,7 +10,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  publish-npm:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -22,19 +22,12 @@ jobs:
         uses: actions/setup-node@v3.0.0
         with:
           node-version: "14.x"
+          registry-url: https://registry.npmjs.org/
       - name: install deps
         run: npm install
-      - name: Use GitHub Token
-        uses: frankdejonge/use-github-token@1.0.1
-        with:
-          authentication: ${{secrets.LOGTHEME_TOKEN}}
-          user_name: shenshuai89
-          user_email: shenshuai89@qq.com
-      - name: run patch
-        run: npm run patch
+      - name: run prepublish
+        run: npm run prepublish
+      - name: publish
+        run: npm run pub:patch
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-      - name: publish
-        run: npm run pub
-        env:
-          NPM_TOKEN: ${{secrets.npm_token}}
