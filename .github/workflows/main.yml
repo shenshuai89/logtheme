@@ -28,5 +28,7 @@ jobs:
           node-version: "14.x"
       - name: install deps
         run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: run fix
         run: npm run fix
