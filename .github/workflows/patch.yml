@@ -29,4 +29,4 @@ jobs:
       - name: publish patch
         run: npm run pub:patch
         env:
-          NPM_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
