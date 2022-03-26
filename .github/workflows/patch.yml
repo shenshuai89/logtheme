@@ -20,6 +20,8 @@ jobs:
         run: npm run prepublish
       - name: publish patch
         run: |
+          git config --global user.name 'shenshuai89'
+          git config --global user.email 'shenshuai89@qq.com'
           npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
           npm run pub:patch
         env:
