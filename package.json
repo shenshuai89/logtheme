@@ -1,6 +1,6 @@
 {
   "name": "@shenshuai89/logtheme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/logtheme.umd.js",
   "module": "dist/logtheme.esm.js",
