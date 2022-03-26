@@ -30,3 +30,4 @@ jobs:
         run: npm run pub:patch
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.LOGTHEME_TOKEN}}
