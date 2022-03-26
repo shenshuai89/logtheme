@@ -14,22 +14,16 @@ jobs:
         with:
           node-version: "14.x"
           registry-url: https://registry.npmjs.org
-          scope: getify
       - name: install deps
         run: npm install
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      - name: Use GitHub Token
-        uses: frankdejonge/use-github-token@1.0.1
-        with:
-          authentication: ${{secrets.NPM_TOKEN}}
-          user_name: shenshuai89
-          user_email: shenshuai89@qq.com
       - name: prepublish
         run: npm run prepublish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: publish patch
+        run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
         run: npm run pub:patch
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
