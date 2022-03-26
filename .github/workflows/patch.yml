@@ -25,9 +25,17 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: install deps
         run: npm install
-      - name: run prepublish
+      - name: Use GitHub Token
+        uses: frankdejonge/use-github-token@1.0.1
+        with:
+          authentication: ${{secrets.LOGTHEME_TOKEN}}
+          user_name: shenshuai89
+          user_email: shenshuai89@qq.com
+      - name: prepublish
         run: npm run prepublish
-      - name: publish
-        run: npm run pub:patch
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: publish patch
+        run: npm run pub:patch
+        env:
+          NPM_TOKEN: ${{secrets.npm_token}}
