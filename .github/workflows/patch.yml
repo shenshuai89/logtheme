@@ -30,7 +30,11 @@ jobs:
           authentication: ${{secrets.LOGTHEME_TOKEN}}
           user_name: shenshuai89
           user_email: shenshuai89@qq.com
-      - name: publish patch
-        run: npm run pub:patch
+      - name: run patch
+        run: npm run patch
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: publish
+        run: npm run pub
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
