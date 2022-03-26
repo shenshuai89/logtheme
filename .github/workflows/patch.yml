@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-node@v3.0.0
         with:
           node-version: "14.x"
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://npm.pkg.github.com/
       - name: install deps
         run: npm install
       - name: Use GitHub Token
