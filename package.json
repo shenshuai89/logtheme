@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/shenshuai89/logtheme.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@shenshuai89/logtheme"
+  },
   "bugs": {
     "url": "https://github.com/shenshuai89/logtheme/issues"
   },
