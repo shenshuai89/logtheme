@@ -9,5 +9,7 @@
 
 ## 测试github action
 
+## 重新设置package name
+由于logtheme设置了双因素认证，重新设置packageName位logthemetwo
 
-![starts](https://img.shields.io/github/stars/shenshuai89/logtheme.svg)
+![starts](https://img.shields.io/github/stars/shenshuai89/logthemetwo.svg)
