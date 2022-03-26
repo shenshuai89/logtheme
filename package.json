@@ -11,7 +11,7 @@
     "url": "https://github.com/shenshuai89/logtheme.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@shenshuai89/logtheme"
+    "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/shenshuai89/logtheme/issues"
@@ -33,9 +33,9 @@
     "patch": "npm version patch -m 'build: update patch'",
     "prepublish": "npm run build",
     "pub": "npm run build && npm publish",
-    "pub:major": "npm run major && npm publish --access=public",
-    "pub:minor": "npm run minor && npm publish --access=public",
-    "pub:patch": "npm run patch && npm publish --access=public"
+    "pub:major": "npm run major && npm publish",
+    "pub:minor": "npm run minor && npm publish",
+    "pub:patch": "npm run patch && npm publish"
   },
   "jest": {
     "preset": "rollup-jest"
