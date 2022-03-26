@@ -24,5 +24,6 @@ jobs:
           git config --global user.email 'shenshuai89@qq.com'
           npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
           npm run pub:patch
+          git push -f
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
