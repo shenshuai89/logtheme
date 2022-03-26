@@ -18,7 +18,6 @@ jobs:
         run: npm install
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          GITHUB_TOKEN: ${{secrets.LOGTHEME_TOKEN}}
       - name: Use GitHub Token
         uses: frankdejonge/use-github-token@1.0.1
         with:
@@ -29,9 +28,7 @@ jobs:
         run: npm run prepublish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          GITHUB_TOKEN: ${{secrets.LOGTHEME_TOKEN}}
       - name: publish patch
         run: npm run pub:patch
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          GITHUB_TOKEN: ${{secrets.LOGTHEME_TOKEN}}
