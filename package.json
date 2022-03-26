@@ -29,7 +29,7 @@
     "minor": "npm version minor -m 'build: update minor'",
     "patch": "npm version patch -m 'build: update patch'",
     "prepublish": "npm run build",
-    "pub": "npm run build && npm publish --access=public",
+    "pub": "npm run build && npm publish",
     "pub:major": "npm run major && npm publish --access=public",
     "pub:minor": "npm run minor && npm publish --access=public",
     "pub:patch": "npm run patch && npm publish --access=public"
